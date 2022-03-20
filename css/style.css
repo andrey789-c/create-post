@@ -214,9 +214,14 @@ input, textarea {
     flex-wrap: wrap; }
     .item__img img {
       width: 350px;
-      margin: 20px; }
+      margin: 20px; 
+}
   .item__data {
     color: grey;
     font-style: italic;
     text-align: right; }
-
+@media (max-width: 400px) {
+  .item__img img{
+    width: 150px;
+  }
+}
