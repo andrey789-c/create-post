@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Create Post</title>
+<script defer="defer" src="./js/main.js"></script><link href="./css/style.css" rel="stylesheet"></head>
+<body>
+    <header>
+        <div class="header__logo">Posts</div>
+    </header>
+
+    <main>
+        <form class="form">
+            <input type="text" class="form__name" placeholder="Введите свое имя">
+            <span class="form__error" id="name-error">.</span>
+            <input type="text" class="form__title" placeholder="Введите название поста">
+            <span class="form__error" id="title-error">.</span>
+            <textarea cols="30" rows="10" class="form__text" placeholder="Напишите пост"></textarea>
+            <span class="form__error" id="text-error">.</span>
+            <button type="button" id="file">Загрузить изображения</button>
+            <div class="form__imgs"></div>
+            <input type="file" multiple="true" class="form__file">
+            <button type="submit">Добавить пост</button>
+        </form>
+
+        <div class="posts">
+            <h1>Посты</h1>
+            <div class="post__items">
+                
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,222 @@
+/*!***********************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./css/style.scss ***!
+  \***********************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
+/*!***************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./css/style.scss (1) ***!
+  \***************************************************************************************************************/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+:focus,
+:active {
+  outline: none; }
+
+a:focus,
+a:active {
+  outline: none; }
+
+li {
+  list-style-type: none; }
+
+nav,
+footer,
+header,
+aside {
+  display: block; }
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+input,
+button,
+textarea {
+  font-family: inherit; }
+
+input::-ms-clear {
+  display: none; }
+
+button {
+  cursor: pointer; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+a {
+  color: inherit; }
+
+a,
+a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+img {
+  vertical-align: top; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: 400; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #eeeeee; }
+
+header {
+  border-bottom: 1px solid #3d3d5c;
+  padding: 20px;
+  background-color: #c4c4ff;
+  margin-bottom: 20px;
+  width: 100%; }
+  header .header__logo {
+    font-size: 20px;
+    font-weight: 600; }
+
+input, textarea {
+  border: 1px solid black; }
+
+.form {
+  margin: 0 auto 40px;
+  width: 70%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px 15px; }
+  .form__name, .form__title {
+    width: 100%;
+    padding: 10px 7px;
+    font-size: 16px; }
+  .form__text {
+    width: 100%;
+    resize: none;
+    padding: 10px 5px;
+    height: 100px;
+    font-size: 14px; }
+  .form__error {
+    opacity: 0;
+    color: red;
+    margin-bottom: 10px;
+    font-size: 13px;
+    display: block; }
+  .form__imgs {
+    display: flex;
+    flex-wrap: wrap; }
+    .form__imgs .form__img-item {
+      width: 200px;
+      position: relative;
+      margin: 10px 10px 10px 0; }
+    .form__imgs .form__close {
+      opacity: 0;
+      padding: 5px;
+      cursor: pointer;
+      background-color: grey;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      transition: all .2s linear; }
+    .form__imgs img {
+      width: 200px; }
+    .form__imgs .form__img-item:hover .form__close {
+      opacity: 1; }
+  .form__file {
+    display: none; }
+  .form button {
+    padding: 7px 10px;
+    font-size: 16px;
+    background-color: green;
+    color: white;
+    font-weight: 500;
+    border-radius: 4px;
+    width: 100%; }
+  .form #file {
+    background-color: yellow;
+    color: black;
+    margin-bottom: 10px; }
+  @media (max-width: 500px) {
+    .form {
+      width: 90%; } }
+
+.posts {
+  background-color: white;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 50px; }
+  .posts h1 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px 0; }
+  .posts .empty {
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 20px; }
+
+.item {
+  position: relative;
+  padding: 20px;
+  margin-bottom: 20px; }
+  .item__trash {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    top: 50%;
+    right: 10px;
+    transition: all .1s linear;
+    cursor: pointer; }
+    .item__trash img {
+      width: 20px; }
+  .item:hover .item__trash {
+    opacity: 1;
+    pointer-events: all; }
+  .item:not(:last-child) {
+    border-bottom: 1px solid #000; }
+  .item__name {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-style: italic; }
+  .item__title {
+    font-size: 18px;
+    margin-bottom: 10px; }
+  .item__text {
+    font-size: 16px;
+    margin-bottom: 10px; }
+  .item__img {
+    display: flex;
+    margin-bottom: 10px;
+    width: 100%;
+    flex-wrap: wrap; }
+    .item__img img {
+      width: 350px;
+      margin: 20px; }
+  .item__data {
+    color: grey;
+    font-style: italic;
+    text-align: right; }
+
